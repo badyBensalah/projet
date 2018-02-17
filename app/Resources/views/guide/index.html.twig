@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Guides list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Etat</th>
+                <th>Datepublication</th>
+                <th>Contenu</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for guide in guides %}
+            <tr>
+                <td><a href="{{ path('guide_show', { 'id': guide.id }) }}">{{ guide.id }}</a></td>
+                <td>{% if guide.etat %}Yes{% else %}No{% endif %}</td>
+                <td>{% if guide.datePublication %}{{ guide.datePublication|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ guide.contenu }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('guide_show', { 'id': guide.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('guide_edit', { 'id': guide.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('guide_new') }}">Create a new guide</a>
+        </li>
+    </ul>
+{% endblock %}

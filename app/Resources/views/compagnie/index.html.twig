@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Compagnies list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for compagnie in compagnies %}
+            <tr>
+                <td><a href="{{ path('compagnie_show', { 'id': compagnie.id }) }}">{{ compagnie.id }}</a></td>
+                <td>{{ compagnie.nom }}</td>
+                <td>{{ compagnie.type }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('compagnie_show', { 'id': compagnie.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('compagnie_edit', { 'id': compagnie.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('compagnie_new') }}">Create a new compagnie</a>
+        </li>
+    </ul>
+{% endblock %}

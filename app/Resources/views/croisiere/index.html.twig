@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Croisieres list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombateau</th>
+                <th>Datedepart</th>
+                <th>Datearrivee</th>
+                <th>Villedepart</th>
+                <th>Villearrivee</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for croisiere in croisieres %}
+            <tr>
+                <td><a href="{{ path('croisiere_show', { 'id': croisiere.id }) }}">{{ croisiere.id }}</a></td>
+                <td>{{ croisiere.nomBateau }}</td>
+                <td>{% if croisiere.dateDepart %}{{ croisiere.dateDepart|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if croisiere.dateArrivee %}{{ croisiere.dateArrivee|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ croisiere.villeDepart }}</td>
+                <td>{{ croisiere.villeArrivee }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('croisiere_show', { 'id': croisiere.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('croisiere_edit', { 'id': croisiere.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('croisiere_new') }}">Create a new croisiere</a>
+        </li>
+    </ul>
+{% endblock %}
