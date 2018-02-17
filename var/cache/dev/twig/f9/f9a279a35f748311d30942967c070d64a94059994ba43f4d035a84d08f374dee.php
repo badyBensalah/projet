@@ -21,29 +21,29 @@ class __TwigTemplate_930d8f710b8998df648fa50cfacedc7587ce2ca3fe799028aa1313a571a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_f6e7ddb019b85c27949ba6e909f736d968533ab608ba9a62fd2d77c649606b34 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f6e7ddb019b85c27949ba6e909f736d968533ab608ba9a62fd2d77c649606b34->enter($__internal_f6e7ddb019b85c27949ba6e909f736d968533ab608ba9a62fd2d77c649606b34_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/show.html.twig"));
+        $__internal_ac6d1aeb9345b3880318c201cfa257ed3b8d9803b96482cc508a1a88a4b4e62a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ac6d1aeb9345b3880318c201cfa257ed3b8d9803b96482cc508a1a88a4b4e62a->enter($__internal_ac6d1aeb9345b3880318c201cfa257ed3b8d9803b96482cc508a1a88a4b4e62a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/show.html.twig"));
 
-        $__internal_c6aeb138501abf66ed71f5a5b5a0c1f6c8bcde8272227d7f4315eeac33cb99af = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c6aeb138501abf66ed71f5a5b5a0c1f6c8bcde8272227d7f4315eeac33cb99af->enter($__internal_c6aeb138501abf66ed71f5a5b5a0c1f6c8bcde8272227d7f4315eeac33cb99af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/show.html.twig"));
+        $__internal_6133d59b7b53d4616d3b92b3381cbfc0c983bee0b22bc876bc05460c99becd2b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6133d59b7b53d4616d3b92b3381cbfc0c983bee0b22bc876bc05460c99becd2b->enter($__internal_6133d59b7b53d4616d3b92b3381cbfc0c983bee0b22bc876bc05460c99becd2b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "article/show.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_f6e7ddb019b85c27949ba6e909f736d968533ab608ba9a62fd2d77c649606b34->leave($__internal_f6e7ddb019b85c27949ba6e909f736d968533ab608ba9a62fd2d77c649606b34_prof);
+        $__internal_ac6d1aeb9345b3880318c201cfa257ed3b8d9803b96482cc508a1a88a4b4e62a->leave($__internal_ac6d1aeb9345b3880318c201cfa257ed3b8d9803b96482cc508a1a88a4b4e62a_prof);
 
         
-        $__internal_c6aeb138501abf66ed71f5a5b5a0c1f6c8bcde8272227d7f4315eeac33cb99af->leave($__internal_c6aeb138501abf66ed71f5a5b5a0c1f6c8bcde8272227d7f4315eeac33cb99af_prof);
+        $__internal_6133d59b7b53d4616d3b92b3381cbfc0c983bee0b22bc876bc05460c99becd2b->leave($__internal_6133d59b7b53d4616d3b92b3381cbfc0c983bee0b22bc876bc05460c99becd2b_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_62378db90c837be828fa14fae46fcdc4b48b854afdc68abc1db4df987591156d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_62378db90c837be828fa14fae46fcdc4b48b854afdc68abc1db4df987591156d->enter($__internal_62378db90c837be828fa14fae46fcdc4b48b854afdc68abc1db4df987591156d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_360821c4fa86911fe0dd489d90bed4945a418b678d37ba977bcc57d9b8167ae6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_360821c4fa86911fe0dd489d90bed4945a418b678d37ba977bcc57d9b8167ae6->enter($__internal_360821c4fa86911fe0dd489d90bed4945a418b678d37ba977bcc57d9b8167ae6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_deb8f9e86a15f323cfc2d015cc1d0c2fe657a028f31e47899bc808840ed6be06 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_deb8f9e86a15f323cfc2d015cc1d0c2fe657a028f31e47899bc808840ed6be06->enter($__internal_deb8f9e86a15f323cfc2d015cc1d0c2fe657a028f31e47899bc808840ed6be06_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_fedd1b4e19bf24ff7b3c0c8d0bd55f0070572f14c63ea4dfeeb1004bc5e60df0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fedd1b4e19bf24ff7b3c0c8d0bd55f0070572f14c63ea4dfeeb1004bc5e60df0->enter($__internal_fedd1b4e19bf24ff7b3c0c8d0bd55f0070572f14c63ea4dfeeb1004bc5e60df0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <h1>Article</h1>
@@ -80,40 +80,47 @@ class __TwigTemplate_930d8f710b8998df648fa50cfacedc7587ce2ca3fe799028aa1313a571a
         echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "lien", array()), "html", null, true);
         echo "</td>
             </tr>
+            <tr>
+                <th>publisher</th>
+                <td>";
+        // line 26
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "publisher", array()), "html", null, true);
+        echo "</td>
+            </tr>
         </tbody>
     </table>
 
     <ul>
         <li>
             <a href=\"";
-        // line 29
+        // line 33
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_index");
         echo "\">Back to the list</a>
         </li>
         <li>
             <a href=\"";
-        // line 32
+        // line 36
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_edit", array("id" => $this->getAttribute(($context["article"] ?? $this->getContext($context, "article")), "id", array()))), "html", null, true);
         echo "\">Edit</a>
         </li>
         <li>
             ";
-        // line 35
+        // line 39
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_start');
         echo "
                 <input type=\"submit\" value=\"Delete\">
             ";
-        // line 37
+        // line 41
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["delete_form"] ?? $this->getContext($context, "delete_form")), 'form_end');
         echo "
         </li>
     </ul>
 ";
         
-        $__internal_deb8f9e86a15f323cfc2d015cc1d0c2fe657a028f31e47899bc808840ed6be06->leave($__internal_deb8f9e86a15f323cfc2d015cc1d0c2fe657a028f31e47899bc808840ed6be06_prof);
+        $__internal_fedd1b4e19bf24ff7b3c0c8d0bd55f0070572f14c63ea4dfeeb1004bc5e60df0->leave($__internal_fedd1b4e19bf24ff7b3c0c8d0bd55f0070572f14c63ea4dfeeb1004bc5e60df0_prof);
 
         
-        $__internal_62378db90c837be828fa14fae46fcdc4b48b854afdc68abc1db4df987591156d->leave($__internal_62378db90c837be828fa14fae46fcdc4b48b854afdc68abc1db4df987591156d_prof);
+        $__internal_360821c4fa86911fe0dd489d90bed4945a418b678d37ba977bcc57d9b8167ae6->leave($__internal_360821c4fa86911fe0dd489d90bed4945a418b678d37ba977bcc57d9b8167ae6_prof);
 
     }
 
@@ -129,7 +136,7 @@ class __TwigTemplate_930d8f710b8998df648fa50cfacedc7587ce2ca3fe799028aa1313a571a
 
     public function getDebugInfo()
     {
-        return array (  107 => 37,  102 => 35,  96 => 32,  90 => 29,  80 => 22,  73 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  114 => 41,  109 => 39,  103 => 36,  97 => 33,  87 => 26,  80 => 22,  73 => 18,  64 => 14,  57 => 10,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -164,6 +171,10 @@ class __TwigTemplate_930d8f710b8998df648fa50cfacedc7587ce2ca3fe799028aa1313a571a
             <tr>
                 <th>Lien</th>
                 <td>{{ article.lien }}</td>
+            </tr>
+            <tr>
+                <th>publisher</th>
+                <td>{{ article.publisher }}</td>
             </tr>
         </tbody>
     </table>
