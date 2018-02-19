@@ -7,75 +7,70 @@ class __TwigTemplate_724c68eeec83f31ef0348aef1723e7ecf6467294c3a65a230056cddb926
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("base.html.twig", "croisiere/new.html.twig", 1);
+        $this->parent = false;
+
         $this->blocks = array(
             'body' => array($this, 'block_body'),
         );
     }
 
-    protected function doGetParent(array $context)
-    {
-        return "base.html.twig";
-    }
-
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b328cb33dfeb58ecf4c1dc735cf872e58b0e9a09da37ebb62bbbf578c4e120aa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b328cb33dfeb58ecf4c1dc735cf872e58b0e9a09da37ebb62bbbf578c4e120aa->enter($__internal_b328cb33dfeb58ecf4c1dc735cf872e58b0e9a09da37ebb62bbbf578c4e120aa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "croisiere/new.html.twig"));
+        $__internal_ff29945330eccaf17be6ea7539a19f79c58f3213741ed7e8b699740974048112 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ff29945330eccaf17be6ea7539a19f79c58f3213741ed7e8b699740974048112->enter($__internal_ff29945330eccaf17be6ea7539a19f79c58f3213741ed7e8b699740974048112_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "croisiere/new.html.twig"));
 
-        $__internal_6a95605fb8eb67283ac8638d9b7d975517d743b3c1b75dd885b130f36eab33ff = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6a95605fb8eb67283ac8638d9b7d975517d743b3c1b75dd885b130f36eab33ff->enter($__internal_6a95605fb8eb67283ac8638d9b7d975517d743b3c1b75dd885b130f36eab33ff_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "croisiere/new.html.twig"));
+        $__internal_fc3ea79ebe349e8df397b3b417380635b228dd2f06187a06613a2e30c3febf0f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_fc3ea79ebe349e8df397b3b417380635b228dd2f06187a06613a2e30c3febf0f->enter($__internal_fc3ea79ebe349e8df397b3b417380635b228dd2f06187a06613a2e30c3febf0f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "croisiere/new.html.twig"));
 
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        // line 1
+        $this->displayBlock('body', $context, $blocks);
         
-        $__internal_b328cb33dfeb58ecf4c1dc735cf872e58b0e9a09da37ebb62bbbf578c4e120aa->leave($__internal_b328cb33dfeb58ecf4c1dc735cf872e58b0e9a09da37ebb62bbbf578c4e120aa_prof);
+        $__internal_ff29945330eccaf17be6ea7539a19f79c58f3213741ed7e8b699740974048112->leave($__internal_ff29945330eccaf17be6ea7539a19f79c58f3213741ed7e8b699740974048112_prof);
 
         
-        $__internal_6a95605fb8eb67283ac8638d9b7d975517d743b3c1b75dd885b130f36eab33ff->leave($__internal_6a95605fb8eb67283ac8638d9b7d975517d743b3c1b75dd885b130f36eab33ff_prof);
+        $__internal_fc3ea79ebe349e8df397b3b417380635b228dd2f06187a06613a2e30c3febf0f->leave($__internal_fc3ea79ebe349e8df397b3b417380635b228dd2f06187a06613a2e30c3febf0f_prof);
 
     }
 
-    // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_db3b23fe46ca15f6672931ea0afd928c62d9349c69027e5b6a015b16d2fe16ee = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_db3b23fe46ca15f6672931ea0afd928c62d9349c69027e5b6a015b16d2fe16ee->enter($__internal_db3b23fe46ca15f6672931ea0afd928c62d9349c69027e5b6a015b16d2fe16ee_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f45028ec00b4e36cb82a555a8b292c7b05f9cbcd965ac6ba0ee3a14569a13d8c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f45028ec00b4e36cb82a555a8b292c7b05f9cbcd965ac6ba0ee3a14569a13d8c->enter($__internal_f45028ec00b4e36cb82a555a8b292c7b05f9cbcd965ac6ba0ee3a14569a13d8c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_be8011c687db7682e69578afa92d3bac8d8795f1b12a38a54d9f745bd2ac5893 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_be8011c687db7682e69578afa92d3bac8d8795f1b12a38a54d9f745bd2ac5893->enter($__internal_be8011c687db7682e69578afa92d3bac8d8795f1b12a38a54d9f745bd2ac5893_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_670d91c97804a1260af46cb6e10de7e93bf893e5daaac53e8622df53f56a8fa8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_670d91c97804a1260af46cb6e10de7e93bf893e5daaac53e8622df53f56a8fa8->enter($__internal_670d91c97804a1260af46cb6e10de7e93bf893e5daaac53e8622df53f56a8fa8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 4
+        // line 2
         echo "    <h1>Croisiere creation</h1>
 
     ";
-        // line 6
+        // line 4
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_start');
         echo "
         ";
-        // line 7
+        // line 5
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock(($context["form"] ?? $this->getContext($context, "form")), 'widget');
         echo "
         <input type=\"submit\" value=\"Create\" />
     ";
-        // line 9
+        // line 7
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock(($context["form"] ?? $this->getContext($context, "form")), 'form_end');
         echo "
 
     <ul>
         <li>
             <a href=\"";
-        // line 13
+        // line 11
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("croisiere_index");
         echo "\">Back to the list</a>
         </li>
     </ul>
 ";
         
-        $__internal_be8011c687db7682e69578afa92d3bac8d8795f1b12a38a54d9f745bd2ac5893->leave($__internal_be8011c687db7682e69578afa92d3bac8d8795f1b12a38a54d9f745bd2ac5893_prof);
+        $__internal_670d91c97804a1260af46cb6e10de7e93bf893e5daaac53e8622df53f56a8fa8->leave($__internal_670d91c97804a1260af46cb6e10de7e93bf893e5daaac53e8622df53f56a8fa8_prof);
 
         
-        $__internal_db3b23fe46ca15f6672931ea0afd928c62d9349c69027e5b6a015b16d2fe16ee->leave($__internal_db3b23fe46ca15f6672931ea0afd928c62d9349c69027e5b6a015b16d2fe16ee_prof);
+        $__internal_f45028ec00b4e36cb82a555a8b292c7b05f9cbcd965ac6ba0ee3a14569a13d8c->leave($__internal_f45028ec00b4e36cb82a555a8b292c7b05f9cbcd965ac6ba0ee3a14569a13d8c_prof);
 
     }
 
@@ -84,14 +79,9 @@ class __TwigTemplate_724c68eeec83f31ef0348aef1723e7ecf6467294c3a65a230056cddb926
         return "croisiere/new.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  69 => 13,  62 => 9,  57 => 7,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  64 => 11,  57 => 7,  52 => 5,  48 => 4,  44 => 2,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -104,9 +94,7 @@ class __TwigTemplate_724c68eeec83f31ef0348aef1723e7ecf6467294c3a65a230056cddb926
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% extends 'base.html.twig' %}
-
-{% block body %}
+        return new Twig_Source("{% block body %}
     <h1>Croisiere creation</h1>
 
     {{ form_start(form) }}
@@ -120,6 +108,6 @@ class __TwigTemplate_724c68eeec83f31ef0348aef1723e7ecf6467294c3a65a230056cddb926
         </li>
     </ul>
 {% endblock %}
-", "croisiere/new.html.twig", "C:\\xampp\\htdocs\\BestTripProject\\app\\Resources\\views\\croisiere\\new.html.twig");
+", "croisiere/new.html.twig", "C:\\xampp\\htdocs\\BestTrip-master\\app\\Resources\\views\\croisiere\\new.html.twig");
     }
 }

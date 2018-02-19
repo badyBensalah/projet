@@ -24,7 +24,7 @@ class CroisiereController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $croisieres = $em->getRepository('croisiere.php')->findAll();
+        $croisieres = $em->getRepository('AppBundle:Croisiere')->findAll();
 
         return $this->render('croisiere/index.html.twig', array(
             'croisieres' => $croisieres,
