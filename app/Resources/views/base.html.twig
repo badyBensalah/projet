@@ -15,10 +15,10 @@
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="{{asset('templates/citytours/img/favicon.ico')}}" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png')}}">
 
     <!-- Google web fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
@@ -61,7 +61,7 @@
     <div id="top_line">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>0045 043204434</strong></div>
+                <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>00216 58 362 134</strong></div>
 
                 <div class="col-md-6 col-sm-6 col-xs-6">
                     <ul id="top_links">
@@ -114,7 +114,7 @@
                 <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
                 <div class="main-menu">
                     <div id="header_menu">
-                        <img src="img/logo_sticky.png" width="160" height="34" alt="City tours" data-retina="true">
+                        <img src="{{asset('templates/citytours/img/logo_sticky.png')}}" width="160" height="34" alt="City tours" data-retina="true">
                     </div>
                     <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
                     <ul>
@@ -319,19 +319,19 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" icon-basket-1"></i>Cart (0) </a>
                             <ul class="dropdown-menu" id="cart_items">
                                 <li>
-                                    <div class="image"><img src="img/thumb_cart_1.jpg" alt="image"></div>
+                                    <div class="image"><img src="{{asset('templates/citytours/img/thumb_cart_1.jpg')}}" alt="image"></div>
                                     <strong>
                                         <a href="#">Louvre museum</a>1x $36.00 </strong>
                                     <a href="#" class="action"><i class="icon-trash"></i></a>
                                 </li>
                                 <li>
-                                    <div class="image"><img src="img/thumb_cart_2.jpg" alt="image"></div>
+                                    <div class="image"><img src="{{asset('templates/citytours/img/thumb_cart_2.jpg')}}" alt="image"></div>
                                     <strong>
                                         <a href="#">Versailles tour</a>2x $36.00 </strong>
                                     <a href="#" class="action"><i class="icon-trash"></i></a>
                                 </li>
                                 <li>
-                                    <div class="image"><img src="img/thumb_cart_3.jpg" alt="image"></div>
+                                    <div class="image"><img src="{{asset('templates/citytours/img/thumb_cart_3.jpg')}}" alt="image"></div>
                                     <strong>
                                         <a href="#">Versailles tour</a>1x $36.00 </strong>
                                     <a href="#" class="action"><i class="icon-trash"></i></a>
@@ -373,14 +373,14 @@
                         <div class="form-group">
                             <label>Things to do</label>
                             <select class="ddslick" name="category">
-                                <option value="0" data-imagesrc="img/icons_search/all_tours.png" selected>All tours</option>
-                                <option value="1" data-imagesrc="img/icons_search/sightseeing.png">City sightseeing</option>
-                                <option value="2"  data-imagesrc="img/icons_search/museums.png">Museum tours</option>
-                                <option value="3" data-imagesrc="img/icons_search/historic.png">Historic Buildings</option>
-                                <option value="4" data-imagesrc="img/icons_search/walking.png">Walking tours</option>
-                                <option value="5" data-imagesrc="img/icons_search/eat.png">Eat & Drink</option>
-                                <option value="6" data-imagesrc="img/icons_search/churches.png">Churces</option>
-                                <option value="7" data-imagesrc="img/icons_search/skyline.png">Skyline tours</option>
+                                <option value="0" data-imagesrc="{{asset('templates/citytours/img/icons_search/all_tours.png')}}" selected>All tours</option>
+                                <option value="1" data-imagesrc="{{asset('templates/citytours/img/icons_search/sightseeing.png')}}">City sightseeing</option>
+                                <option value="2"  data-imagesrc="{{asset('templates/citytours/img/icons_search/museums.png')}}">Museum tours</option>
+                                <option value="3" data-imagesrc="{{asset('templates/citytours/img/icons_search/historic.png')}}">Historic Buildings</option>
+                                <option value="4" data-imagesrc="{{asset('templates/citytours/img/icons_search/walking.png')}}">Walking tours</option>
+                                <option value="5" data-imagesrc="{{asset('templates/citytours/img/icons_search/eat.png')}}">Eat & Drink</option>
+                                <option value="6" data-imagesrc="{{asset('templates/citytours/img/icons_search/churches.png')}}">Churces</option>
+                                <option value="7" data-imagesrc="{{asset('templates/citytours/img/icons_search/skyline.png')}}">Skyline tours</option>
                             </select>
                         </div>
                     </div>
@@ -563,13 +563,13 @@
                         <div class="form-group">
                             <label>Food type</label>
                             <select class="ddslick" name="category_2">
-                                <option value="0" data-imagesrc="img/icons_search/all_restaurants.png" selected>All restaurants</option>
-                                <option value="1" data-imagesrc="img/icons_search/fast_food.png">Fast food</option>
-                                <option value="2"  data-imagesrc="img/icons_search/pizza_italian.png">Pizza / Italian</option>
-                                <option value="3" data-imagesrc="img/icons_search/international.png">International</option>
-                                <option value="4" data-imagesrc="img/icons_search/japanese.png">Japanese</option>
-                                <option value="5" data-imagesrc="img/icons_search/chinese.png">Chinese</option>
-                                <option value="6" data-imagesrc="img/icons_search/bar.png">Coffee Bar</option>
+                                <option value="0" data-imagesrc="{{asset('templates/citytours/img/icons_search/all_restaurants.png')}}" selected>All restaurants</option>
+                                <option value="1" data-imagesrc="{{asset('templates/citytours/img/icons_search/fast_food.png')}}">Fast food</option>
+                                <option value="2"  data-imagesrc="{{asset('templates/citytours/img/icons_search/pizza_italian.png')}}">Pizza / Italian</option>
+                                <option value="3" data-imagesrc="{{asset('templates/citytours/img/icons_search/international.png')}}">International</option>
+                                <option value="4" data-imagesrc="{{asset('templates/citytours/img/icons_search/japanese.png')}}">Japanese</option>
+                                <option value="5" data-imagesrc="{{asset('templates/citytours/img/icons_search/chinese.png')}}">Chinese</option>
+                                <option value="6" data-imagesrc="{{asset('templates/citytours/img/icons_search/bar.png')}}">Coffee Bar</option>
                             </select>
                         </div>
                     </div>
@@ -689,7 +689,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 text-center">
                     <p>
-                        <a href="#"><img src="img/bus.jpg" alt="Pic" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('templates/citytours/img/bus.jpg')}}" alt="Pic" class="img-responsive"></a>
                     </p>
                     <h4><span>Sightseen tour</span> booking</h4>
                     <p>
@@ -698,7 +698,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 text-center">
                     <p>
-                        <a href="#"><img src="img/transfer.jpg" alt="Pic" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('templates/citytours/img/transfer.jpg')}}" alt="Pic" class="img-responsive"></a>
                     </p>
                     <h4><span>Transfer</span> booking</h4>
                     <p>
@@ -707,7 +707,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 text-center">
                     <p>
-                        <a href="#"><img src="img/guide.jpg" alt="Pic" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('templates/citytours/img/guide.jpg')}}" alt="Pic" class="img-responsive"></a>
                     </p>
                     <h4><span>Tour guide</span> booking</h4>
                     <p>
@@ -716,7 +716,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 text-center">
                     <p>
-                        <a href="#"><img src="img/hotel.jpg" alt="Pic" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('templates/citytours/img/hotel.jpg')}}" alt="Pic" class="img-responsive"></a>
                     </p>
                     <h4><span>Hotel</span> booking</h4>
                     <p>
@@ -794,7 +794,7 @@
 
         <div class="row">
             <div class="col-md-8 col-sm-6 hidden-xs">
-                <img src="img/laptop.png" alt="Laptop" class="img-responsive laptop">
+                <img src="{{asset('templates/citytours/img/laptop.png')}}" alt="Laptop" class="img-responsive laptop">
             </div>
             <div class="col-md-4 col-sm-6">
                 <h3><span>Get started</span> with CityTours</h3>
@@ -896,7 +896,7 @@
 </div><!-- End Search Menu -->
 
 <!-- Common scripts -->
-<script data-cfasync="false" src="../cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js')}}"></script><script src="{{asset('templates/citytours/js/jquery-2.2.4.min.js')}}"></script>
+<script data-cfasync="false" src="{{asset('templates/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js')}}"></script><script src="{{asset('templates/citytours/js/jquery-2.2.4.min.js')}}"></script>
 <script src="{{asset('templates/citytours/js/common_scripts_min.js')}}"></script>
 <script src="{{asset('templates/citytours/js/functions.js')}}"></script>
 
