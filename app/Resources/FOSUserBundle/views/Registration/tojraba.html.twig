@@ -12,14 +12,13 @@
     <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
     <meta name="author" content="Ansonika">
     <title>CITY TOURS - City tours and travel site template by Ansonika</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="{{asset('templates/citytours/img/favicon.ico')}}" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="{{asset('templates/citytours/img/apple-touch-icon-57x57-precomposed.png')}}">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="{{asset('templates/citytours/img/apple-touch-icon-72x72-precomposed.png')}}">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="{{asset('templates/citytours/img/apple-touch-icon-114x114-precomposed.png')}}">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{{asset('templates/citytours/img/apple-touch-icon-144x144-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png')}}">
 
     <!-- Google web fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
@@ -85,8 +84,15 @@
                                         <span class="span-or">or</span>
                                     </div>
                                     <div class="form-group">
-                                        {% block content %}{% endblock %}
-                                        <a id="forgot_pw" href="#">Forgot password?</a>
+                                        <input type="text" class="form-control" id="inputUserName" placeholder="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputUsernameEmail" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                    </div>
+                                    <a id="forgot_pw" href="#">Forgot password?</a>
                                     <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop">
                                     <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline">
                                 </div>
