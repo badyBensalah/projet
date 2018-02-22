@@ -3,12 +3,6 @@
 {% block body %}
     {{ form_start(form) }}
     {{ form_widget(form) }}
-    <input type="submit" value="Create" />
+    <input class="btn_1 green"  type="submit" value="Add Article" />
     {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('article_index') }}">Back to the list</a>
-        </li>
-    </ul>
 {% endblock %}

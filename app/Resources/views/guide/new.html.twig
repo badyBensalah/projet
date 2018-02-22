@@ -1,16 +1,8 @@
-{% extends 'base.html.twig' %}
+{% extends 'guideLayout.html.twig' %}
 
 {% block body %}
-    <h1>Guide creation</h1>
-
     {{ form_start(form) }}
         {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+    <input class="btn_1 green"  type="submit" value="Add Guide" />
     {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('guide_index') }}">Back to the list</a>
-        </li>
-    </ul>
 {% endblock %}

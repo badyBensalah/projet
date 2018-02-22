@@ -1,11 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'experienceLayout.html.twig' %}
 
 {% block body %}
-    <h1>Experience creation</h1>
-
     {{ form_start(form) }}
         {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+    <input class="btn_1 green"  type="submit" value="Add Article" />
     {{ form_end(form) }}
 
     <ul>

@@ -1,12 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'experiencesGestion.html.twig' %}
 
 {% block body %}
-    <h1>Experiences list</h1>
-
     <table>
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Description</th>
                 <th>Gallerie</th>
                 <th>Actions</th>
@@ -15,7 +12,7 @@
         <tbody>
         {% for experience in experiences %}
             <tr>
-                <td><a href="{{ path('experience_show', { 'id': experience.id }) }}">{{ experience.id }}</a></td>
+                <td type="hidden"><a href="{{ path('experience_show', { 'id': experience.id }) }}">{{ experience.id }}</a></td>
                 <td>{{ experience.description }}</td>
                 <td>{{ experience.gallerie }}</td>
                 <td>

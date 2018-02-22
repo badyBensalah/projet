@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<html lang="en">
+
+<!-- Mirrored from www.ansonika.com/citytours/index_7.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 23:59:10 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
+    <meta name="author" content="Ansonika">
+    <title>CITY TOURS - City tours and travel site template by Ansonika</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="{{asset('templates/citytours/img/favicon.ico')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="{{asset('templates/citytours/img/apple-touch-icon-57x57-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="{{asset('templates/citytours/img/apple-touch-icon-72x72-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="{{asset('templates/citytours/img/apple-touch-icon-114x114-precomposed.png')}}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="{{asset('templates/citytours/img/apple-touch-icon-144x144-precomposed.png')}}">
+
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="{{asset('templates/citytours/css/base.css')}}" rel="stylesheet">
+
+    <!-- SPECIFIC CSS -->
+    <link href="{{asset('templates/citytours/css/skins/square/grey.css')}}" rel="stylesheet">
+    <link href="{{asset('templates/citytours/css/date_time_picker.css')}}" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="{{asset('templates/citytours/js/html5shiv.min.js')}}"></script>
+      <script src="{{asset('templates/citytours/js/respond.min.js')}}"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!--[if lte IE 8]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+<![endif]-->
+
+<div id="preloader">
+    <div class="sk-spinner sk-spinner-wave">
+        <div class="sk-rect1"></div>
+        <div class="sk-rect2"></div>
+        <div class="sk-rect3"></div>
+        <div class="sk-rect4"></div>
+        <div class="sk-rect5"></div>
+    </div>
+</div>
+<!-- End Preload -->
+
+<div class="layer"></div>
+<!-- Mobile menu overlay mask -->
+
+<!-- Header================================================== -->
+<header>
+    <div id="top_line">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>00216 58 362 134</strong></div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <ul id="top_links">
+                        <li>
+                            <div class="dropdown dropdown-access">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="access_link">Sign in</a>
+                                <div class="dropdown-menu">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href="#" class="bt_facebook">
+                                                <i class="icon-facebook"></i>Facebook </a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href="#" class="bt_paypal">
+                                                <i class="icon-paypal"></i>Paypal </a>
+                                        </div>
+                                    </div>
+                                    <div class="login-or">
+                                        <hr class="hr-or">
+                                        <span class="span-or">or</span>
+                                    </div>
+                                    <div class="form-group">
+                                        {% block content %}{% endblock %}
+                                        <a id="forgot_pw" href="#">Forgot password?</a>
+                                        <input type="submit" name="Sign_in" value="Sign in" id="Sign_in" class="button_drop">
+                                        <input type="submit" name="Sign_up" value="Sign up" id="Sign_up" class="button_drop outline">
+                                    </div>
+                                </div><!-- End Dropdown access -->
+                        </li>
+                        <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container-->
+    </div><!-- End top line-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <div id="logo_home">
+                    <h1><a href="index.html" title="City tours travel template">City Tours travel template</a></h1>
+                </div>
+            </div>
+            <nav class="col-md-9 col-sm-9 col-xs-9">
+                <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                <div class="main-menu">
+                    <div id="header_menu">
+                        <img src="{{asset('templates/citytours/img/logo_sticky.png')}}" width="160" height="34" alt="City tours" data-retina="true">
+                    </div>
+                    <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                    <ul>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Experiences <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="{{ path('article_index') }}">All Experiences List</a></li>
+                                <li><a href="{{ path('article_new') }}">Add New Experience</a></li>
+                                <li><a href="{{ path('article_index') }}">Edit An Experience</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Hotels <i class="icon-down-open-mini"></i></a><ul>
+                                <li><a href="{{ path('hotel_index') }}">All Hotels List</a></li>
+                                <li><a href="{{ path('hotel_new') }}">Add New Hotel</a></li>
+                                <li><a href="{{ path('hotel_index') }}">Edit A Hotel</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Flights <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="{{ path('vol_index') }}">All Flights list</a></li>
+                                <li><a href="{{ path('vol_new') }}">Add New Flight</a></li>
+                                <li><a href="{{ path('vol_index') }}">Edit Flight</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Cruises <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="{{ path('croisiere_index') }}">All Cruises List</a></li>
+                                <li><a href="{{ path('croisiere_new') }}">Add New Cruise</a></li>
+                                <li><a href="{{ path('croisiere_index') }}">Edit A Cruise </a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Restaurants <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="{{ path('restaurant_index') }}">All Restaurants List</a></li>
+                                <li><a href="{{ path('restaurant_new') }}">Add New Restaurant</a></li>
+                                <li><a href="{{ path('restaurant_index') }}">Edit A Restaurant</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">News <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="{{ path('article_index') }}">All News List</a></li>
+                                <li><a href="{{ path('article_index') }}">Add News</a></li>
+                                <li><a href="{{ path('article_index') }}">Edit News </a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Touristic Guides <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="{{ path('guide_index') }}">All Guides List</a></li>
+                                <li><a href="{{ path('guide_new') }}">Add New Guide</a></li>
+                                <li><a href="{{ path('guide_index') }}">Edit A Guide </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- End main-menu -->
+                <ul id="top_tools">
+                    <li>
+                        <div class="dropdown dropdown-search">
+                            <a href="#" class="search-overlay-menu-btn" data-toggle="dropdown"><i class="icon-search"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-cart">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class=" icon-basket-1"></i>My Account </a>
+                            <ul class="dropdown-menu" id="cart_items">
+                                <li>
+                                    <div class="image"><img src="{{asset('templates/citytours/img/thumb_cart_1.jpg')}}" alt="image"></div>
+                                    <strong>
+                                        <a href="#">View Profile</a></strong>
+                                    <a href="#" class="action"></a>
+                                </li>
+                                <li>
+                                    <div class="image"><img src="{{asset('templates/citytours/img/thumb_cart_2.jpg')}}" alt="image"></div>
+                                    <strong>
+                                        <a href="#">Edit Profile</a></strong>
+                                    <a href="#" class="action"></a>
+                                </li>
+                                <li>
+                                    <div class="image"><img src="{{asset('templates/citytours/img/thumb_cart_3.jpg')}}" alt="image"></div>
+                                    <strong>
+                                        <a href="#">Deactivate Account</a></strong>
+                                    <a href="#" class="action"></a>
+                                </li>
+
+                            </ul>
+                        </div><!-- End dropdown-cart-- to be modified >
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div><!-- container -->
+</header><!-- End Header -->
+
+<section id="search_container">
+    <div id="search">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tours" data-toggle="tab">Add Your Guide</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tours">
+                <h3>Your Guide Will Be Evaluated Before Publication</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            {% block body %}{% endblock %}</div>
+                    </div>
+                </div>
+                <!-- End row -->
+                <hr>
+
+            </div>
+            <!-- End rab -->
+
+        </div>
+</section>
+<!-- End hero -->
+
+<main>
+
+    <!-- End container -->
+
+    <div class="white_bg">
+        <div class="container margin_60">
+            <div class="main_title">
+                <h2>Other <span>Popular</span> tours</h2>
+                <p>
+                    Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
+                </p>
+            </div>
+            <div class="row add_bottom_45">
+                <div class="col-md-4 other_tours">
+                    <ul>
+                        <li><a href="#"><i class="icon_set_1_icon-3"></i>Tour Eiffel<span class="other_tours_price">$42</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-30"></i>Shopping tour<span class="other_tours_price">$35</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-44"></i>Versailles tour<span class="other_tours_price">$20</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-3"></i>Montparnasse skyline<span class="other_tours_price">$26</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-44"></i>Pompidue<span class="other_tours_price">$26</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-3"></i>Senna River tour<span class="other_tours_price">$32</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 other_tours">
+                    <ul>
+                        <li><a href="#"><i class="icon_set_1_icon-1"></i>Notredame<span class="other_tours_price">$48</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-4"></i>Lafaiette<span class="other_tours_price">$55</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-30"></i>Trocadero<span class="other_tours_price">$76</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-3"></i>Open Bus tour<span class="other_tours_price">$55</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-30"></i>Louvre museum<span class="other_tours_price">$24</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-3"></i>Madlene Cathedral<span class="other_tours_price">$24</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 other_tours">
+                    <ul>
+                        <li><a href="#"><i class="icon_set_1_icon-37"></i>Montparnasse<span class="other_tours_price">$36</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-1"></i>D'Orsey museum<span class="other_tours_price">$28</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-50"></i>Gioconda Louvre musuem<span class="other_tours_price">$44</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-44"></i>Tour Eiffel<span class="other_tours_price">$56</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-50"></i>Ladefanse<span class="other_tours_price">$16</span></a>
+                        </li>
+                        <li><a href="#"><i class="icon_set_1_icon-44"></i>Notredame<span class="other_tours_price">$26</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End row -->
+
+            <div class="banner colored add_bottom_30">
+                <h4>Discover our Top tours <span>from $34</span></h4>
+                <p>
+                    Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
+                </p>
+                <a href="single_tour.html" class="btn_1 white">Read more</a>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center">
+                    <p>
+                        <a href="#"><img src="{{asset('templates/citytours/img/bus.jpg')}}" alt="Pic" class="img-responsive"></a>
+                    </p>
+                    <h4><span>Sightseen tour</span> booking</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <p>
+                        <a href="#"><img src="{{asset('templates/citytours/img/transfer.jpg')}}" alt="Pic" class="img-responsive"></a>
+                    </p>
+                    <h4><span>Transfer</span> booking</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <p>
+                        <a href="#"><img src="{{asset('templates/citytours/img/guide.jpg')}}" alt="Pic" class="img-responsive"></a>
+                    </p>
+                    <h4><span>Tour guide</span> booking</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center">
+                    <p>
+                        <a href="#"><img src="{{asset('templates/citytours/img/hotel.jpg')}}" alt="Pic" class="img-responsive"></a>
+                    </p>
+                    <h4><span>Hotel</span> booking</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+                    </p>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </div>
+    <!-- End white_bg -->
+
+    <section class="promo_full">
+        <div class="promo_full_wp magnific">
+            <div>
+                <h3>BELONG ANYWHERE</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.
+                </p>
+                <a href="https://www.youtube.com/watch?v=Zz5cu72Gv5Y" class="video"><i class="icon-play-circled2-1"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End section -->
+
+    <div class="container margin_60">
+
+        <div class="main_title">
+            <h2>Some <span>good</span> reasons</h2>
+            <p>
+                Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
+            </p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 wow zoomIn" data-wow-delay="0.2s">
+                <div class="feature_home">
+                    <i class="icon_set_1_icon-41"></i>
+                    <h3><span>+120</span> Premium tours</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+                    </p>
+                    <a href="about.html" class="btn_1 outline">Read more</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow zoomIn" data-wow-delay="0.4s">
+                <div class="feature_home">
+                    <i class="icon_set_1_icon-30"></i>
+                    <h3><span>+1000</span> Customers</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+                    </p>
+                    <a href="about.html" class="btn_1 outline">Read more</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow zoomIn" data-wow-delay="0.6s">
+                <div class="feature_home">
+                    <i class="icon_set_1_icon-57"></i>
+                    <h3><span>H24 </span> Support</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+                    </p>
+                    <a href="about.html" class="btn_1 outline">Read more</a>
+                </div>
+            </div>
+
+        </div>
+        <!--End row -->
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-6 hidden-xs">
+                <img src="{{asset('templates/citytours/img/laptop.png')}}" alt="Laptop" class="img-responsive laptop">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h3><span>Get started</span> with CityTours</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
+                </p>
+                <ul class="list_order">
+                    <li><span>1</span>Select your preferred tours</li>
+                    <li><span>2</span>Purchase tickets and options</li>
+                    <li><span>3</span>Pick them directly from your office</li>
+                </ul>
+                <a href="all_tour_list.html" class="btn_1">Start now</a>
+            </div>
+        </div>
+        <!-- End row -->
+
+    </div>
+    <!-- End container -->
+</main>
+<!-- End main -->
+
+<footer class="revealed">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-3">
+                <h3>Need help?</h3>
+                <a href="tel://004542344599" id="phone">+45 423 445 99</a>
+                <a href="http://www.ansonika.com/cdn-cgi/l/email-protection#fb939e978bbb98928f828f948e8988d5989496" id="email_footer"><span class="__cf_email__" data-cfemail="18707d7468587b716c616c776d6a6b367b7775">[email&#160;protected]</span></a>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Terms and condition</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <h3>Discover</h3>
+                <ul>
+                    <li><a href="#">Community blog</a></li>
+                    <li><a href="#">Tour guide</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-3">
+                <h3>Settings</h3>
+                <div class="styled-select">
+                    <select class="form-control" name="lang" id="lang">
+                        <option value="English" selected>English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Russian</option>
+                    </select>
+                </div>
+                <div class="styled-select">
+                    <select class="form-control" name="currency" id="currency">
+                        <option value="USD" selected>USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                </div>
+            </div>
+        </div><!-- End row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="social_footer">
+                    <ul>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-google"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                        <li><a href="#"><i class="icon-vimeo"></i></a></li>
+                        <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                    </ul>
+                    <p>© Citytours 2015</p>
+                </div>
+            </div>
+        </div><!-- End row -->
+    </div><!-- End container -->
+</footer><!-- End footer -->
+
+<div id="toTop"></div><!-- Back to top button -->
+
+<!-- Search Menu -->
+<div class="search-overlay-menu">
+    <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+    <form role="search" id="searchform" method="get">
+        <input value="" name="q" type="search" placeholder="Search..." />
+        <button type="submit"><i class="icon_set_1_icon-78"></i>
+        </button>
+    </form>
+</div><!-- End Search Menu -->
+
+<!-- Common scripts -->
+<script data-cfasync="false" src="{{asset('templates/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js')}}"></script><script src="{{asset('templates/citytours/js/jquery-2.2.4.min.js')}}"></script>
+<script src="{{asset('templates/citytours/js/common_scripts_min.js')}}"></script>
+<script src="{{asset('templates/citytours/js/functions.js')}}"></script>
+
+<!-- Specific scripts -->
+<script src="{{asset('templates/citytours/js/icheck.js')}}"></script>
+<script>
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_square-grey',
+        radioClass: 'iradio_square-grey'
+    });
+</script>
+<script src="{{asset('templates/citytours/js/bootstrap-datepicker.js')}}"></script>
+<script src="{{asset('templates/citytours/js/bootstrap-timepicker.js')}}"></script>
+<script>
+    $('input.date-pick').datepicker('setDate', 'today');
+    $('input.time-pick').timepicker({
+        minuteStep: 15,
+        showInpunts: false
+    })
+</script>
+<script src="{{asset('templates/citytours/js/jquery.ddslick.js')}}"></script>
+<script>
+    $("select.ddslick").each(function(){
+        $(this).ddslick({
+            showSelectedHTML: true
+        });
+    });
+</script>
+</body>
+
+<!-- Mirrored from www.ansonika.com/citytours/index_7.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 23:59:16 GMT -->
+</html>

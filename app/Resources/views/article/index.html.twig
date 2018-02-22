@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'articleGestion.html.twig' %}
 
 {% block body %}
     <h1>Articles list</h1>
@@ -6,27 +6,27 @@
     <table>
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Datepublication</th>
-                <th>Description</th>
-                <th>Lien</th>
-                <th>Actions</th>
+                <th type="hidden">Id</th>
+                <th>PublicationDate</th>
+                <th>Description </th>
+                <th>Link </th>
+                <th>Actions </th>
             </tr>
         </thead>
         <tbody>
         {% for article in articles %}
             <tr>
-                <td><a href="{{ path('article_show', { 'id': article.id }) }}">{{ article.id }}</a></td>
-                <td>{% if article.datePublication %}{{ article.datePublication|date('Y-m-d') }}{% endif %}</td>
-                <td>{{ article.description }}</td>
-                <td>{{ article.lien }}</td>
+                <td ><a type="hidden" class="form-group" href="{{ path('article_show', { 'id': article.id }) }}">{{ article.id }}</a></td>
+                <td class="form-group">{% if article.datePublication %}{{ article.datePublication|date('Y-m-d') }}{% endif %}</td>
+                <td class="form-group">{{ article.description }}</td>
+                <td class="form-group"> {{ article.lien }}</td>
                 <td>
                     <ul>
                         <li>
-                            <a href="{{ path('article_show', { 'id': article.id }) }}">show</a>
+                            <a class="form-group" href="{{ path('article_show', { 'id': article.id }) }}">Show</a>
                         </li>
                         <li>
-                            <a href="{{ path('article_edit', { 'id': article.id }) }}">edit</a>
+                            <a href="{{ path('article_edit', { 'id': article.id }) }}">Edit Or Remove</a>
                         </li>
                     </ul>
                 </td>
