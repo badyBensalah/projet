@@ -93,7 +93,6 @@
                             </div><!-- End Dropdown access -->
                         </li>
                         <li><a href="wishlist.html" id="wishlist_link">Wishlist</a></li>
-                        <li><a href="http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika">Purchase this template</a></li>
                     </ul>
                 </div>
             </div><!-- End row -->
@@ -116,36 +115,7 @@
                     <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
                     <ul>
                         <li class="submenu">
-                            <a href="javascript:void(0);" class="show-submenu">Home <i class="icon-down-open-mini"></i></a>
-                            <ul>
-                                <li><a href="javascript:void(0);">Revolution slider</a>
-                                    <ul>
-                                        <li><a href="index.html">Default slider</a></li>
-                                        <li><a href="index_20.html">Advanced slider</a></li>
-                                        <li><a href="index_14.html">Youtube Hero</a></li>
-                                        <li><a href="index_15.html">Vimeo Hero</a></li>
-                                        <li><a href="index_17.html">Youtube 4K</a></li>
-                                        <li><a href="index_16.html">Carousel</a></li>
-                                        <li><a href="index_19.html">Mailchimp Newsletter</a></li>
-                                        <li><a href="index_18.html">Fixed Caption</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="index_12.html">Layer slider</a></li>
-                                <li><a href="index_2.html">With Only tours</a></li>
-                                <li><a href="index_3.html">Single image</a></li>
-                                <li><a href="index_4.html">Header video</a></li>
-                                <li><a href="index_7.html">With search panel</a></li>
-                                <li><a href="index_13.html">With tabs</a></li>
-                                <li><a href="index_5.html">With map</a></li>
-                                <li><a href="index_6.html">With search bar</a></li>
-                                <li><a href="index_8.html">Search bar + Video</a></li>
-                                <li><a href="index_9.html">With Text Rotator</a></li>
-                                <li><a href="index_10.html">With Cookie Bar (EU law)</a></li>
-                                <li><a href="index_11.html">Popup Advertising</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:void(0);" class="show-submenu">Tours <i class="icon-down-open-mini"></i></a>
+                            <a href="javascript:void(0);" class="show-submenu">Experiences <i class="icon-down-open-mini"></i></a>
                             <ul>
                                 <li><a href="all_tours_list.html">All tours list</a></li>
                                 <li><a href="all_tours_grid.html">All tours grid</a></li>
@@ -196,6 +166,18 @@
                             </ul>
                         </li>
                         <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Cruises <i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="all_restaurants_list.html">All restaurants list</a></li>
+                                <li><a href="all_restaurants_grid.html">All restaurants grid</a></li>
+                                <li><a href="all_restaurants_map_listing.html">All restaurants map listing</a></li>
+                                <li><a href="single_restaurant.html">Single restaurant page</a></li>
+                                <li><a href="single_restaurant_datepicker_v2.html">Date and time picker V2</a></li>
+                                <li><a href="payment_restaurant.html">Booking restaurant</a></li>
+                                <li><a href="confirmation_restaurant.html">Confirmation transfers</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
                             <a href="javascript:void(0);" class="show-submenu">Restaurants <i class="icon-down-open-mini"></i></a>
                             <ul>
                                 <li><a href="all_restaurants_list.html">All restaurants list</a></li>
@@ -208,7 +190,7 @@
                             </ul>
                         </li>
                         <li class="megamenu submenu">
-                            <a href="javascript:void(0);" class="show-submenu-mega">Bonus<i class="icon-down-open-mini"></i></a>
+                            <a href="javascript:void(0);" class="show-submenu-mega">News<i class="icon-down-open-mini"></i></a>
                             <div class="menu-wrapper">
                                 <div class="col-md-4">
                                     <h3>Header styles</h3>
@@ -250,7 +232,7 @@
                             </div><!-- End menu-wrapper -->
                         </li>
                         <li class="megamenu submenu">
-                            <a href="javascript:void(0);" class="show-submenu-mega">Pages<i class="icon-down-open-mini"></i></a>
+                            <a href="javascript:void(0);" class="show-submenu-mega">Touristic Guides<i class="icon-down-open-mini"></i></a>
                             <div class="menu-wrapper">
                                 <div class="col-md-4">
                                     <h3>Pages</h3>
@@ -272,7 +254,7 @@
                                 <div class="col-md-4">
                                     <h3>Pages</h3>
                                     <ul>
-                                        <li><a href="contact_us_1.html">Contact us 1</a></li>
+                                        <li><a href="{{ path('article_new') }}">Contact us 1</a></li>
                                         <li><a href="contact_us_2.html">Contact us 2</a></li>
                                         <li><a href="blog_right_sidebar.html">Blog</a></li>
                                         <li><a href="blog.html">Blog left sidebar</a></li>
@@ -350,10 +332,13 @@
 <section id="search_container">
     <div id="search">
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#tours" data-toggle="tab">Tours</a></li>
+            <li class="active"><a href="#tours" data-toggle="tab">Experiences</a></li>
             <li><a href="#hotels" data-toggle="tab">Hotels</a></li>
             <li><a href="#transfers" data-toggle="tab">Transfers</a></li>
+            <li><a href="#restaurants" data-toggle="tab">Cruises</a></li>
             <li><a href="#restaurants" data-toggle="tab">Restaurants</a></li>
+            <li><a href="#restaurants" data-toggle="tab">News</a></li>
+            <li><a href="#restaurants" data-toggle="tab">Touristic Guides</a></li>
         </ul>
 
         <div class="tab-content">

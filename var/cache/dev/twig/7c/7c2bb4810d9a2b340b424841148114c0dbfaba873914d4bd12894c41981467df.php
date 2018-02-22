@@ -10,16 +10,17 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
         $this->parent = false;
 
         $this->blocks = array(
+            'content' => array($this, 'block_content'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b846ebb25e6609f1872424505437259ab7d2483a003ba251b7aa34776a4756bb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_b846ebb25e6609f1872424505437259ab7d2483a003ba251b7aa34776a4756bb->enter($__internal_b846ebb25e6609f1872424505437259ab7d2483a003ba251b7aa34776a4756bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_81570c8fd08687b29a6d26729561c95f8ccc13a7376509c04e80509bddaa8b0a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_81570c8fd08687b29a6d26729561c95f8ccc13a7376509c04e80509bddaa8b0a->enter($__internal_81570c8fd08687b29a6d26729561c95f8ccc13a7376509c04e80509bddaa8b0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
-        $__internal_f33e6e5d7c7b563444e4175994f2379e9665553ec51ce157ab49bd30358104c2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f33e6e5d7c7b563444e4175994f2379e9665553ec51ce157ab49bd30358104c2->enter($__internal_f33e6e5d7c7b563444e4175994f2379e9665553ec51ce157ab49bd30358104c2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_6f3b7cec4c8d1b554dfc00ca4998d2f803e323e0af8b9cfcf12fd715a7b1db3a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_6f3b7cec4c8d1b554dfc00ca4998d2f803e323e0af8b9cfcf12fd715a7b1db3a->enter($__internal_6f3b7cec4c8d1b554dfc00ca4998d2f803e323e0af8b9cfcf12fd715a7b1db3a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -36,43 +37,56 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
     <meta name=\"description\" content=\"Citytours - Premium site template for city tours agencies, transfers and tickets.\">
     <meta name=\"author\" content=\"Ansonika\">
     <title>CITY TOURS - City tours and travel site template by Ansonika</title>
+    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" />
 
     <!-- Favicons-->
     <link rel=\"shortcut icon\" href=\"";
-        // line 17
+        // line 18
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/favicon.ico"), "html", null, true);
         echo "\" type=\"image/x-icon\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" href=\"img/apple-touch-icon-57x57-precomposed.png')}}\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"72x72\" href=\"img/apple-touch-icon-72x72-precomposed.png')}}\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"114x114\" href=\"img/apple-touch-icon-114x114-precomposed.png')}}\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"144x144\" href=\"img/apple-touch-icon-144x144-precomposed.png')}}\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" href=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/apple-touch-icon-57x57-precomposed.png"), "html", null, true);
+        echo "\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"72x72\" href=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/apple-touch-icon-72x72-precomposed.png"), "html", null, true);
+        echo "\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"114x114\" href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/apple-touch-icon-114x114-precomposed.png"), "html", null, true);
+        echo "\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"144x144\" href=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/apple-touch-icon-144x144-precomposed.png"), "html", null, true);
+        echo "\">
 
     <!-- Google web fonts -->
     <link href=\"https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i\" rel=\"stylesheet\">
 
     <!-- CSS -->
     <link href=\"";
-        // line 27
+        // line 28
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/css/base.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
     <!-- SPECIFIC CSS -->
     <link href=\"";
-        // line 30
+        // line 31
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/css/skins/square/grey.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
     <link href=\"";
-        // line 31
+        // line 32
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/css/date_time_picker.css"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
     <!--[if lt IE 9]>
       <script src=\"";
-        // line 34
+        // line 35
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/html5shiv.min.js"), "html", null, true);
         echo "\"></script>
       <script src=\"";
-        // line 35
+        // line 36
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/respond.min.js"), "html", null, true);
         echo "\"></script>
     <![endif]-->
@@ -126,19 +140,17 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                                         <span class=\"span-or\">or</span>
                                     </div>
                                     <div class=\"form-group\">
-                                        <input type=\"text\" class=\"form-control\" id=\"inputUsernameEmail\" placeholder=\"Email\">
-                                    </div>
-                                    <div class=\"form-group\">
-                                        <input type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\">
-                                    </div>
-                                    <a id=\"forgot_pw\" href=\"#\">Forgot password?</a>
+                                        ";
+        // line 88
+        $this->displayBlock('content', $context, $blocks);
+        // line 89
+        echo "                                        <a id=\"forgot_pw\" href=\"#\">Forgot password?</a>
                                     <input type=\"submit\" name=\"Sign_in\" value=\"Sign in\" id=\"Sign_in\" class=\"button_drop\">
                                     <input type=\"submit\" name=\"Sign_up\" value=\"Sign up\" id=\"Sign_up\" class=\"button_drop outline\">
                                 </div>
                             </div><!-- End Dropdown access -->
                         </li>
                         <li><a href=\"wishlist.html\" id=\"wishlist_link\">Wishlist</a></li>
-                        <li><a href=\"http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika\">Purchase this template</a></li>
                     </ul>
                 </div>
             </div><!-- End row -->
@@ -157,43 +169,14 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                 <div class=\"main-menu\">
                     <div id=\"header_menu\">
                         <img src=\"";
-        // line 117
+        // line 113
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/logo_sticky.png"), "html", null, true);
         echo "\" width=\"160\" height=\"34\" alt=\"City tours\" data-retina=\"true\">
                     </div>
                     <a href=\"#\" class=\"open_close\" id=\"close_in\"><i class=\"icon_set_1_icon-77\"></i></a>
                     <ul>
                         <li class=\"submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Home <i class=\"icon-down-open-mini\"></i></a>
-                            <ul>
-                                <li><a href=\"javascript:void(0);\">Revolution slider</a>
-                                    <ul>
-                                        <li><a href=\"index.html\">Default slider</a></li>
-                                        <li><a href=\"index_20.html\">Advanced slider</a></li>
-                                        <li><a href=\"index_14.html\">Youtube Hero</a></li>
-                                        <li><a href=\"index_15.html\">Vimeo Hero</a></li>
-                                        <li><a href=\"index_17.html\">Youtube 4K</a></li>
-                                        <li><a href=\"index_16.html\">Carousel</a></li>
-                                        <li><a href=\"index_19.html\">Mailchimp Newsletter</a></li>
-                                        <li><a href=\"index_18.html\">Fixed Caption</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=\"index_12.html\">Layer slider</a></li>
-                                <li><a href=\"index_2.html\">With Only tours</a></li>
-                                <li><a href=\"index_3.html\">Single image</a></li>
-                                <li><a href=\"index_4.html\">Header video</a></li>
-                                <li><a href=\"index_7.html\">With search panel</a></li>
-                                <li><a href=\"index_13.html\">With tabs</a></li>
-                                <li><a href=\"index_5.html\">With map</a></li>
-                                <li><a href=\"index_6.html\">With search bar</a></li>
-                                <li><a href=\"index_8.html\">Search bar + Video</a></li>
-                                <li><a href=\"index_9.html\">With Text Rotator</a></li>
-                                <li><a href=\"index_10.html\">With Cookie Bar (EU law)</a></li>
-                                <li><a href=\"index_11.html\">Popup Advertising</a></li>
-                            </ul>
-                        </li>
-                        <li class=\"submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Tours <i class=\"icon-down-open-mini\"></i></a>
+                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Experiences <i class=\"icon-down-open-mini\"></i></a>
                             <ul>
                                 <li><a href=\"all_tours_list.html\">All tours list</a></li>
                                 <li><a href=\"all_tours_grid.html\">All tours grid</a></li>
@@ -244,6 +227,18 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             </ul>
                         </li>
                         <li class=\"submenu\">
+                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Cruises <i class=\"icon-down-open-mini\"></i></a>
+                            <ul>
+                                <li><a href=\"all_restaurants_list.html\">All restaurants list</a></li>
+                                <li><a href=\"all_restaurants_grid.html\">All restaurants grid</a></li>
+                                <li><a href=\"all_restaurants_map_listing.html\">All restaurants map listing</a></li>
+                                <li><a href=\"single_restaurant.html\">Single restaurant page</a></li>
+                                <li><a href=\"single_restaurant_datepicker_v2.html\">Date and time picker V2</a></li>
+                                <li><a href=\"payment_restaurant.html\">Booking restaurant</a></li>
+                                <li><a href=\"confirmation_restaurant.html\">Confirmation transfers</a></li>
+                            </ul>
+                        </li>
+                        <li class=\"submenu\">
                             <a href=\"javascript:void(0);\" class=\"show-submenu\">Restaurants <i class=\"icon-down-open-mini\"></i></a>
                             <ul>
                                 <li><a href=\"all_restaurants_list.html\">All restaurants list</a></li>
@@ -256,7 +251,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             </ul>
                         </li>
                         <li class=\"megamenu submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">Bonus<i class=\"icon-down-open-mini\"></i></a>
+                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">News<i class=\"icon-down-open-mini\"></i></a>
                             <div class=\"menu-wrapper\">
                                 <div class=\"col-md-4\">
                                     <h3>Header styles</h3>
@@ -298,7 +293,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             </div><!-- End menu-wrapper -->
                         </li>
                         <li class=\"megamenu submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">Pages<i class=\"icon-down-open-mini\"></i></a>
+                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">Touristic Guides<i class=\"icon-down-open-mini\"></i></a>
                             <div class=\"menu-wrapper\">
                                 <div class=\"col-md-4\">
                                     <h3>Pages</h3>
@@ -320,7 +315,10 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                                 <div class=\"col-md-4\">
                                     <h3>Pages</h3>
                                     <ul>
-                                        <li><a href=\"contact_us_1.html\">Contact us 1</a></li>
+                                        <li><a href=\"";
+        // line 257
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("article_new");
+        echo "\">Contact us 1</a></li>
                                         <li><a href=\"contact_us_2.html\">Contact us 2</a></li>
                                         <li><a href=\"blog_right_sidebar.html\">Blog</a></li>
                                         <li><a href=\"blog.html\">Blog left sidebar</a></li>
@@ -365,7 +363,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             <ul class=\"dropdown-menu\" id=\"cart_items\">
                                 <li>
                                     <div class=\"image\"><img src=\"";
-        // line 322
+        // line 301
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/thumb_cart_1.jpg"), "html", null, true);
         echo "\" alt=\"image\"></div>
                                     <strong>
@@ -374,7 +372,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                                 </li>
                                 <li>
                                     <div class=\"image\"><img src=\"";
-        // line 328
+        // line 307
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/thumb_cart_2.jpg"), "html", null, true);
         echo "\" alt=\"image\"></div>
                                     <strong>
@@ -383,7 +381,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                                 </li>
                                 <li>
                                     <div class=\"image\"><img src=\"";
-        // line 334
+        // line 313
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/thumb_cart_3.jpg"), "html", null, true);
         echo "\" alt=\"image\"></div>
                                     <strong>
@@ -407,10 +405,13 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
 <section id=\"search_container\">
     <div id=\"search\">
         <ul class=\"nav nav-tabs\">
-            <li class=\"active\"><a href=\"#tours\" data-toggle=\"tab\">Tours</a></li>
+            <li class=\"active\"><a href=\"#tours\" data-toggle=\"tab\">Experiences</a></li>
             <li><a href=\"#hotels\" data-toggle=\"tab\">Hotels</a></li>
             <li><a href=\"#transfers\" data-toggle=\"tab\">Transfers</a></li>
+            <li><a href=\"#restaurants\" data-toggle=\"tab\">Cruises</a></li>
             <li><a href=\"#restaurants\" data-toggle=\"tab\">Restaurants</a></li>
+            <li><a href=\"#restaurants\" data-toggle=\"tab\">News</a></li>
+            <li><a href=\"#restaurants\" data-toggle=\"tab\">Touristic Guides</a></li>
         </ul>
 
         <div class=\"tab-content\">
@@ -428,35 +429,35 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             <label>Things to do</label>
                             <select class=\"ddslick\" name=\"category\">
                                 <option value=\"0\" data-imagesrc=\"";
-        // line 376
+        // line 358
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/all_tours.png"), "html", null, true);
         echo "\" selected>All tours</option>
                                 <option value=\"1\" data-imagesrc=\"";
-        // line 377
+        // line 359
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/sightseeing.png"), "html", null, true);
         echo "\">City sightseeing</option>
                                 <option value=\"2\"  data-imagesrc=\"";
-        // line 378
+        // line 360
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/museums.png"), "html", null, true);
         echo "\">Museum tours</option>
                                 <option value=\"3\" data-imagesrc=\"";
-        // line 379
+        // line 361
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/historic.png"), "html", null, true);
         echo "\">Historic Buildings</option>
                                 <option value=\"4\" data-imagesrc=\"";
-        // line 380
+        // line 362
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/walking.png"), "html", null, true);
         echo "\">Walking tours</option>
                                 <option value=\"5\" data-imagesrc=\"";
-        // line 381
+        // line 363
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/eat.png"), "html", null, true);
         echo "\">Eat & Drink</option>
                                 <option value=\"6\" data-imagesrc=\"";
-        // line 382
+        // line 364
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/churches.png"), "html", null, true);
         echo "\">Churces</option>
                                 <option value=\"7\" data-imagesrc=\"";
-        // line 383
+        // line 365
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/skyline.png"), "html", null, true);
         echo "\">Skyline tours</option>
                             </select>
@@ -642,31 +643,31 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             <label>Food type</label>
                             <select class=\"ddslick\" name=\"category_2\">
                                 <option value=\"0\" data-imagesrc=\"";
-        // line 566
+        // line 548
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/all_restaurants.png"), "html", null, true);
         echo "\" selected>All restaurants</option>
                                 <option value=\"1\" data-imagesrc=\"";
-        // line 567
+        // line 549
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/fast_food.png"), "html", null, true);
         echo "\">Fast food</option>
                                 <option value=\"2\"  data-imagesrc=\"";
-        // line 568
+        // line 550
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/pizza_italian.png"), "html", null, true);
         echo "\">Pizza / Italian</option>
                                 <option value=\"3\" data-imagesrc=\"";
-        // line 569
+        // line 551
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/international.png"), "html", null, true);
         echo "\">International</option>
                                 <option value=\"4\" data-imagesrc=\"";
-        // line 570
+        // line 552
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/japanese.png"), "html", null, true);
         echo "\">Japanese</option>
                                 <option value=\"5\" data-imagesrc=\"";
-        // line 571
+        // line 553
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/chinese.png"), "html", null, true);
         echo "\">Chinese</option>
                                 <option value=\"6\" data-imagesrc=\"";
-        // line 572
+        // line 554
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/icons_search/bar.png"), "html", null, true);
         echo "\">Coffee Bar</option>
                             </select>
@@ -789,7 +790,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                 <div class=\"col-md-3 col-sm-6 text-center\">
                     <p>
                         <a href=\"#\"><img src=\"";
-        // line 692
+        // line 674
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/bus.jpg"), "html", null, true);
         echo "\" alt=\"Pic\" class=\"img-responsive\"></a>
                     </p>
@@ -801,7 +802,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                 <div class=\"col-md-3 col-sm-6 text-center\">
                     <p>
                         <a href=\"#\"><img src=\"";
-        // line 701
+        // line 683
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/transfer.jpg"), "html", null, true);
         echo "\" alt=\"Pic\" class=\"img-responsive\"></a>
                     </p>
@@ -813,7 +814,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                 <div class=\"col-md-3 col-sm-6 text-center\">
                     <p>
                         <a href=\"#\"><img src=\"";
-        // line 710
+        // line 692
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/guide.jpg"), "html", null, true);
         echo "\" alt=\"Pic\" class=\"img-responsive\"></a>
                     </p>
@@ -825,7 +826,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                 <div class=\"col-md-3 col-sm-6 text-center\">
                     <p>
                         <a href=\"#\"><img src=\"";
-        // line 719
+        // line 701
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/hotel.jpg"), "html", null, true);
         echo "\" alt=\"Pic\" class=\"img-responsive\"></a>
                     </p>
@@ -906,7 +907,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
         <div class=\"row\">
             <div class=\"col-md-8 col-sm-6 hidden-xs\">
                 <img src=\"";
-        // line 797
+        // line 779
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/img/laptop.png"), "html", null, true);
         echo "\" alt=\"Laptop\" class=\"img-responsive laptop\">
             </div>
@@ -1011,23 +1012,23 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
 
 <!-- Common scripts -->
 <script data-cfasync=\"false\" src=\"";
-        // line 899
+        // line 881
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"), "html", null, true);
         echo "\"></script><script src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/jquery-2.2.4.min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 900
+        // line 882
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/common_scripts_min.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 901
+        // line 883
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/functions.js"), "html", null, true);
         echo "\"></script>
 
 <!-- Specific scripts -->
 <script src=\"";
-        // line 904
+        // line 886
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/icheck.js"), "html", null, true);
         echo "\"></script>
 <script>
@@ -1037,11 +1038,11 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
     });
 </script>
 <script src=\"";
-        // line 911
+        // line 893
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/bootstrap-datepicker.js"), "html", null, true);
         echo "\"></script>
 <script src=\"";
-        // line 912
+        // line 894
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/bootstrap-timepicker.js"), "html", null, true);
         echo "\"></script>
 <script>
@@ -1052,7 +1053,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
     })
 </script>
 <script src=\"";
-        // line 920
+        // line 902
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("templates/citytours/js/jquery.ddslick.js"), "html", null, true);
         echo "\"></script>
 <script>
@@ -1067,10 +1068,27 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
 <!-- Mirrored from www.ansonika.com/citytours/index_7.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 23:59:16 GMT -->
 </html>";
         
-        $__internal_b846ebb25e6609f1872424505437259ab7d2483a003ba251b7aa34776a4756bb->leave($__internal_b846ebb25e6609f1872424505437259ab7d2483a003ba251b7aa34776a4756bb_prof);
+        $__internal_81570c8fd08687b29a6d26729561c95f8ccc13a7376509c04e80509bddaa8b0a->leave($__internal_81570c8fd08687b29a6d26729561c95f8ccc13a7376509c04e80509bddaa8b0a_prof);
 
         
-        $__internal_f33e6e5d7c7b563444e4175994f2379e9665553ec51ce157ab49bd30358104c2->leave($__internal_f33e6e5d7c7b563444e4175994f2379e9665553ec51ce157ab49bd30358104c2_prof);
+        $__internal_6f3b7cec4c8d1b554dfc00ca4998d2f803e323e0af8b9cfcf12fd715a7b1db3a->leave($__internal_6f3b7cec4c8d1b554dfc00ca4998d2f803e323e0af8b9cfcf12fd715a7b1db3a_prof);
+
+    }
+
+    // line 88
+    public function block_content($context, array $blocks = array())
+    {
+        $__internal_7920c82db82aecd3609543fdcdcb38531610100cc70beb782422f6ccfd10cf92 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_7920c82db82aecd3609543fdcdcb38531610100cc70beb782422f6ccfd10cf92->enter($__internal_7920c82db82aecd3609543fdcdcb38531610100cc70beb782422f6ccfd10cf92_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_7f3a8e11dd42c7846ed1a1b83ef55187c51af7c7cc2a28cb7be8faa8f76e31e8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7f3a8e11dd42c7846ed1a1b83ef55187c51af7c7cc2a28cb7be8faa8f76e31e8->enter($__internal_7f3a8e11dd42c7846ed1a1b83ef55187c51af7c7cc2a28cb7be8faa8f76e31e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
+
+        
+        $__internal_7f3a8e11dd42c7846ed1a1b83ef55187c51af7c7cc2a28cb7be8faa8f76e31e8->leave($__internal_7f3a8e11dd42c7846ed1a1b83ef55187c51af7c7cc2a28cb7be8faa8f76e31e8_prof);
+
+        
+        $__internal_7920c82db82aecd3609543fdcdcb38531610100cc70beb782422f6ccfd10cf92->leave($__internal_7920c82db82aecd3609543fdcdcb38531610100cc70beb782422f6ccfd10cf92_prof);
 
     }
 
@@ -1086,7 +1104,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
 
     public function getDebugInfo()
     {
-        return array (  1056 => 920,  1045 => 912,  1041 => 911,  1031 => 904,  1025 => 901,  1021 => 900,  1015 => 899,  910 => 797,  829 => 719,  817 => 710,  805 => 701,  793 => 692,  670 => 572,  666 => 571,  662 => 570,  658 => 569,  654 => 568,  650 => 567,  646 => 566,  460 => 383,  456 => 382,  452 => 381,  448 => 380,  444 => 379,  440 => 378,  436 => 377,  432 => 376,  387 => 334,  378 => 328,  369 => 322,  161 => 117,  76 => 35,  72 => 34,  66 => 31,  62 => 30,  56 => 27,  43 => 17,  25 => 1,);
+        return array (  1079 => 88,  1057 => 902,  1046 => 894,  1042 => 893,  1032 => 886,  1026 => 883,  1022 => 882,  1016 => 881,  911 => 779,  830 => 701,  818 => 692,  806 => 683,  794 => 674,  671 => 554,  667 => 553,  663 => 552,  659 => 551,  655 => 550,  651 => 549,  647 => 548,  461 => 365,  457 => 364,  453 => 363,  449 => 362,  445 => 361,  441 => 360,  437 => 359,  433 => 358,  385 => 313,  376 => 307,  367 => 301,  320 => 257,  173 => 113,  147 => 89,  145 => 88,  90 => 36,  86 => 35,  80 => 32,  76 => 31,  70 => 28,  61 => 22,  57 => 21,  53 => 20,  49 => 19,  45 => 18,  26 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -1113,13 +1131,14 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
     <meta name=\"description\" content=\"Citytours - Premium site template for city tours agencies, transfers and tickets.\">
     <meta name=\"author\" content=\"Ansonika\">
     <title>CITY TOURS - City tours and travel site template by Ansonika</title>
+    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" />
 
     <!-- Favicons-->
     <link rel=\"shortcut icon\" href=\"{{asset('templates/citytours/img/favicon.ico')}}\" type=\"image/x-icon\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" href=\"img/apple-touch-icon-57x57-precomposed.png')}}\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"72x72\" href=\"img/apple-touch-icon-72x72-precomposed.png')}}\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"114x114\" href=\"img/apple-touch-icon-114x114-precomposed.png')}}\">
-    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"144x144\" href=\"img/apple-touch-icon-144x144-precomposed.png')}}\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" href=\"{{asset('templates/citytours/img/apple-touch-icon-57x57-precomposed.png')}}\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"72x72\" href=\"{{asset('templates/citytours/img/apple-touch-icon-72x72-precomposed.png')}}\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"114x114\" href=\"{{asset('templates/citytours/img/apple-touch-icon-114x114-precomposed.png')}}\">
+    <link rel=\"apple-touch-icon\" type=\"image/x-icon\" sizes=\"144x144\" href=\"{{asset('templates/citytours/img/apple-touch-icon-144x144-precomposed.png')}}\">
 
     <!-- Google web fonts -->
     <link href=\"https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i\" rel=\"stylesheet\">
@@ -1185,19 +1204,14 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                                         <span class=\"span-or\">or</span>
                                     </div>
                                     <div class=\"form-group\">
-                                        <input type=\"text\" class=\"form-control\" id=\"inputUsernameEmail\" placeholder=\"Email\">
-                                    </div>
-                                    <div class=\"form-group\">
-                                        <input type=\"password\" class=\"form-control\" id=\"inputPassword\" placeholder=\"Password\">
-                                    </div>
-                                    <a id=\"forgot_pw\" href=\"#\">Forgot password?</a>
+                                        {% block content %}{% endblock %}
+                                        <a id=\"forgot_pw\" href=\"#\">Forgot password?</a>
                                     <input type=\"submit\" name=\"Sign_in\" value=\"Sign in\" id=\"Sign_in\" class=\"button_drop\">
                                     <input type=\"submit\" name=\"Sign_up\" value=\"Sign up\" id=\"Sign_up\" class=\"button_drop outline\">
                                 </div>
                             </div><!-- End Dropdown access -->
                         </li>
                         <li><a href=\"wishlist.html\" id=\"wishlist_link\">Wishlist</a></li>
-                        <li><a href=\"http://themeforest.net/item/citytours-city-tours-tour-tickets-and-guides/10715647?ref=ansonika\">Purchase this template</a></li>
                     </ul>
                 </div>
             </div><!-- End row -->
@@ -1220,36 +1234,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                     <a href=\"#\" class=\"open_close\" id=\"close_in\"><i class=\"icon_set_1_icon-77\"></i></a>
                     <ul>
                         <li class=\"submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Home <i class=\"icon-down-open-mini\"></i></a>
-                            <ul>
-                                <li><a href=\"javascript:void(0);\">Revolution slider</a>
-                                    <ul>
-                                        <li><a href=\"index.html\">Default slider</a></li>
-                                        <li><a href=\"index_20.html\">Advanced slider</a></li>
-                                        <li><a href=\"index_14.html\">Youtube Hero</a></li>
-                                        <li><a href=\"index_15.html\">Vimeo Hero</a></li>
-                                        <li><a href=\"index_17.html\">Youtube 4K</a></li>
-                                        <li><a href=\"index_16.html\">Carousel</a></li>
-                                        <li><a href=\"index_19.html\">Mailchimp Newsletter</a></li>
-                                        <li><a href=\"index_18.html\">Fixed Caption</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=\"index_12.html\">Layer slider</a></li>
-                                <li><a href=\"index_2.html\">With Only tours</a></li>
-                                <li><a href=\"index_3.html\">Single image</a></li>
-                                <li><a href=\"index_4.html\">Header video</a></li>
-                                <li><a href=\"index_7.html\">With search panel</a></li>
-                                <li><a href=\"index_13.html\">With tabs</a></li>
-                                <li><a href=\"index_5.html\">With map</a></li>
-                                <li><a href=\"index_6.html\">With search bar</a></li>
-                                <li><a href=\"index_8.html\">Search bar + Video</a></li>
-                                <li><a href=\"index_9.html\">With Text Rotator</a></li>
-                                <li><a href=\"index_10.html\">With Cookie Bar (EU law)</a></li>
-                                <li><a href=\"index_11.html\">Popup Advertising</a></li>
-                            </ul>
-                        </li>
-                        <li class=\"submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Tours <i class=\"icon-down-open-mini\"></i></a>
+                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Experiences <i class=\"icon-down-open-mini\"></i></a>
                             <ul>
                                 <li><a href=\"all_tours_list.html\">All tours list</a></li>
                                 <li><a href=\"all_tours_grid.html\">All tours grid</a></li>
@@ -1300,6 +1285,18 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             </ul>
                         </li>
                         <li class=\"submenu\">
+                            <a href=\"javascript:void(0);\" class=\"show-submenu\">Cruises <i class=\"icon-down-open-mini\"></i></a>
+                            <ul>
+                                <li><a href=\"all_restaurants_list.html\">All restaurants list</a></li>
+                                <li><a href=\"all_restaurants_grid.html\">All restaurants grid</a></li>
+                                <li><a href=\"all_restaurants_map_listing.html\">All restaurants map listing</a></li>
+                                <li><a href=\"single_restaurant.html\">Single restaurant page</a></li>
+                                <li><a href=\"single_restaurant_datepicker_v2.html\">Date and time picker V2</a></li>
+                                <li><a href=\"payment_restaurant.html\">Booking restaurant</a></li>
+                                <li><a href=\"confirmation_restaurant.html\">Confirmation transfers</a></li>
+                            </ul>
+                        </li>
+                        <li class=\"submenu\">
                             <a href=\"javascript:void(0);\" class=\"show-submenu\">Restaurants <i class=\"icon-down-open-mini\"></i></a>
                             <ul>
                                 <li><a href=\"all_restaurants_list.html\">All restaurants list</a></li>
@@ -1312,7 +1309,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             </ul>
                         </li>
                         <li class=\"megamenu submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">Bonus<i class=\"icon-down-open-mini\"></i></a>
+                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">News<i class=\"icon-down-open-mini\"></i></a>
                             <div class=\"menu-wrapper\">
                                 <div class=\"col-md-4\">
                                     <h3>Header styles</h3>
@@ -1354,7 +1351,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                             </div><!-- End menu-wrapper -->
                         </li>
                         <li class=\"megamenu submenu\">
-                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">Pages<i class=\"icon-down-open-mini\"></i></a>
+                            <a href=\"javascript:void(0);\" class=\"show-submenu-mega\">Touristic Guides<i class=\"icon-down-open-mini\"></i></a>
                             <div class=\"menu-wrapper\">
                                 <div class=\"col-md-4\">
                                     <h3>Pages</h3>
@@ -1376,7 +1373,7 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
                                 <div class=\"col-md-4\">
                                     <h3>Pages</h3>
                                     <ul>
-                                        <li><a href=\"contact_us_1.html\">Contact us 1</a></li>
+                                        <li><a href=\"{{ path('article_new') }}\">Contact us 1</a></li>
                                         <li><a href=\"contact_us_2.html\">Contact us 2</a></li>
                                         <li><a href=\"blog_right_sidebar.html\">Blog</a></li>
                                         <li><a href=\"blog.html\">Blog left sidebar</a></li>
@@ -1454,10 +1451,13 @@ class __TwigTemplate_6f06a2e167898936c970ccaddd03ba9d16b2a83ee7c92efba12230c1ad9
 <section id=\"search_container\">
     <div id=\"search\">
         <ul class=\"nav nav-tabs\">
-            <li class=\"active\"><a href=\"#tours\" data-toggle=\"tab\">Tours</a></li>
+            <li class=\"active\"><a href=\"#tours\" data-toggle=\"tab\">Experiences</a></li>
             <li><a href=\"#hotels\" data-toggle=\"tab\">Hotels</a></li>
             <li><a href=\"#transfers\" data-toggle=\"tab\">Transfers</a></li>
+            <li><a href=\"#restaurants\" data-toggle=\"tab\">Cruises</a></li>
             <li><a href=\"#restaurants\" data-toggle=\"tab\">Restaurants</a></li>
+            <li><a href=\"#restaurants\" data-toggle=\"tab\">News</a></li>
+            <li><a href=\"#restaurants\" data-toggle=\"tab\">Touristic Guides</a></li>
         </ul>
 
         <div class=\"tab-content\">
