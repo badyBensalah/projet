@@ -117,60 +117,56 @@
                         <li class="submenu">
                             <a href="javascript:void(0);" class="show-submenu">Experiences <i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="all_tours_list.html">All Experiences List</a></li>
-                                <li><a href="all_tours_grid.html">Add New Experience</a></li>
-                                <li><a href="all_tours_map_listing.html">Edit An Experience</a></li>
+                                <li><a href="{{ path('article_index') }}">All Experiences List</a></li>
+                                <li><a href="{{ path('article_new') }}">Add New Experience</a></li>
+                                <li><a href="{{ path('article_index') }}">Edit An Experience</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="javascript:void(0);" class="show-submenu">Hotels <i class="icon-down-open-mini"></i></a><ul>
-                                <li><a href="all_tours_list.html">All Hotels List</a></li>
-                                <li><a href="all_tours_grid.html">Add New Hotel</a></li>
-                                <li><a href="all_tours_map_listing.html">Edit A Hotel</a></li>
+                                <li><a href="{{ path('hotel_index') }}">All Hotels List</a></li>
+                                <li><a href="{{ path('hotel_new') }}">Add New Hotel</a></li>
+                                <li><a href="{{ path('hotel_index') }}">Edit A Hotel</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);" class="show-submenu">Transfers <i class="icon-down-open-mini"></i></a>
+                            <a href="javascript:void(0);" class="show-submenu">Flights <i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="all_transfer_list.html">All transfers list</a></li>
-                                <li><a href="all_transfer_grid.html">All transfers grid</a></li>
-                                <li><a href="single_transfer.html">Single transfer page</a></li>
-                                <li><a href="single_transfer_datepicker_v2.html">Date and time picker V2</a></li>
-                                <li><a href="cart_transfer.html">Cart transfers</a></li>
-                                <li><a href="payment_transfer.html">Booking transfers</a></li>
-                                <li><a href="confirmation_transfer.html">Confirmation transfers</a></li>
+                                <li><a href="{{ path('vol_index') }}">All Flights list</a></li>
+                                <li><a href="{{ path('vol_new') }}">Add New Flight</a></li>
+                                <li><a href="{{ path('vol_index') }}">Edit Flight</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="javascript:void(0);" class="show-submenu">Cruises <i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="all_restaurants_list.html">All Cruises List</a></li>
-                                <li><a href="all_restaurants_grid.html">Add New Cruise</a></li>
-                                <li><a href="all_restaurants_map_listing.html">Edit A Cruise </a></li>
+                                <li><a href="{{ path('croisiere_index') }}">All Cruises List</a></li>
+                                <li><a href="{{ path('croisiere_new') }}">Add New Cruise</a></li>
+                                <li><a href="{{ path('croisiere_index') }}">Edit A Cruise </a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="javascript:void(0);" class="show-submenu">Restaurants <i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="all_restaurants_list.html">All Restaurants List</a></li>
-                                <li><a href="all_restaurants_grid.html">Add New Restaurant</a></li>
-                                <li><a href="all_restaurants_map_listing.html">Edit A Restaurant</a></li>
+                                <li><a href="{{ path('restaurant_index') }}">All Restaurants List</a></li>
+                                <li><a href="{{ path('restaurant_new') }}">Add New Restaurant</a></li>
+                                <li><a href="{{ path('restaurant_index') }}">Edit A Restaurant</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="javascript:void(0);" class="show-submenu">News <i class="icon-down-open-mini"></i></a>
-                            <ul>
-                                <li><a href="all_restaurants_list.html">All News List</a></li>
-                                <li><a href="all_restaurants_grid.html">Add News</a></li>
-                                <li><a href="all_restaurants_map_listing.html">Edit News </a></li>
+                            <ul>l2
+                                <li><a href="{{ path('article_index') }}">All News List</a></li>
+                                <li><a href="{{ path('article_new') }}">Add News</a></li>
+                                <li><a href="{{ path('article_index') }}">Edit News </a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="javascript:void(0);" class="show-submenu">Touristic Guides <i class="icon-down-open-mini"></i></a>
                             <ul>
-                                <li><a href="all_restaurants_list.html">All Guides List</a></li>
-                                <li><a href="all_restaurants_grid.html">Add New Guide</a></li>
-                                <li><a href="all_restaurants_map_listing.html">Edit A Guide </a></li>
+                                <li><a href="{{ path('guide_index') }}">All Guides List</a></li>
+                                <li><a href="{{ path('guide_new') }}">Add New Guide</a></li>
+                                <li><a href="{{ path('guide_index') }}">Edit A Guide </a></li>
                             </ul>
                         </li>
                     </ul>
@@ -205,7 +201,7 @@
                                 </li>
 
                             </ul>
-                        </div><!-- End dropdown-cart-->
+                        </div><!-- End dropdown-cart-- to be modified >
                     </li>
                 </ul>
             </nav>
@@ -218,7 +214,7 @@
         <ul class="nav nav-tabs">
             <li class="active"><a href="#tours" data-toggle="tab">Experiences</a></li>
             <li><a href="#hotels" data-toggle="tab">Hotels</a></li>
-            <li><a href="#transfers" data-toggle="tab">Transfers</a></li>
+            <li><a href="#transfers" data-toggle="tab">Flights</a></li>
             <li><a href="#restaurants" data-toggle="tab">Cruises</a></li>
             <li><a href="#restaurants" data-toggle="tab">Restaurants</a></li>
             <li><a href="#restaurants" data-toggle="tab">News</a></li>
@@ -227,7 +223,7 @@
 
         <div class="tab-content">
             <div class="tab-pane active" id="tours">
-                <h3>Search Tours in Paris</h3>
+                <h3>Search Tours All Over The World</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
